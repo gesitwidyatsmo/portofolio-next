@@ -1,0 +1,80 @@
+.lightMode {
+  animation: fill-light 3s ease forwards 5.5s, mix-blend-mode-light 3s ease forwards 6s;
+}
+
+.darkMode {
+  animation: fill-dark 3s ease forwards, mix-blend-mode-dark 3s ease forwards;
+}
+
+#Gesit path:nth-child(1) {
+  stroke-dasharray: 2371;
+  stroke-dashoffset: 2371;
+  animation: draw 2s ease forwards 1.5s;
+}
+
+#Gesit path:nth-child(2) {
+  stroke-dasharray: 1793;
+  stroke-dashoffset: 1793;
+  animation: draw 2s ease forwards 1.8s;
+}
+
+#Gesit path:nth-child(3) {
+  stroke-dasharray: 1687;
+  stroke-dashoffset: 1687;
+  animation: draw 2s ease forwards 2.1s;
+}
+
+#Gesit path:nth-child(4) {
+  stroke-dasharray: 1236;
+  stroke-dashoffset: 1236;
+  animation: draw 2s ease forwards 2.4s;
+}
+
+#Gesit path:nth-child(5) {
+  stroke-dasharray: 1301;
+  stroke-dashoffset: 1301;
+  animation: draw 2s ease forwards 2.7s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-light {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fff;
+  }
+}
+
+@keyframes mix-blend-mode-light {
+  from {
+    mix-blend-mode: difference;
+  }
+  to {
+    mix-blend-mode: overlay;
+  }
+}
+
+@keyframes fill-dark {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #1d1d1d;
+    opacity: 0.8;
+  }
+}
+
+@keyframes mix-blend-mode-dark {
+  from {
+    mix-blend-mode: normal;
+  }
+  to {
+    mix-blend-mode: normal;
+  }
+}

@@ -1,0 +1,95 @@
+.lightMode {
+  animation: fill-light 3s ease forwards 5.5s, mix-blend-mode-light 3s ease forwards 6s;
+}
+
+.darkMode {
+  animation: fill-dark 3s ease forwards, mix-blend-mode-dark 3s ease forwards;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 1207;
+  stroke-dashoffset: 1207;
+  animation: draw 3s ease forwards 1.5s;
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 555;
+  stroke-dashoffset: 555;
+  animation: draw 3s ease forwards 1.8s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 762;
+  stroke-dashoffset: 762;
+  animation: draw 3s ease forwards 2.1s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 555;
+  stroke-dashoffset: 555;
+  animation: draw 2s ease forwards 2.4s;
+}
+#logo path:nth-child(5) {
+  stroke-dasharray: 739;
+  stroke-dashoffset: 739;
+  animation: draw 2s ease forwards 2.7s;
+}
+#logo path:nth-child(6) {
+  stroke-dasharray: 543;
+  stroke-dashoffset: 543;
+  animation: draw 2s ease forwards 3s;
+}
+#logo path:nth-child(7) {
+  stroke-dasharray: 1069;
+  stroke-dashoffset: 1069;
+  animation: draw 2s ease forwards 3.3s;
+}
+#logo path:nth-child(8) {
+  stroke-dasharray: 581;
+  stroke-dashoffset: 581;
+  animation: draw 2s ease forwards 3.6s;
+}
+#logo path:nth-child(9) {
+  stroke-dasharray: 818;
+  stroke-dashoffset: 818;
+  animation: draw 2s ease forwards 3.9s;
+}
+#logo path:nth-child(10) {
+  stroke-dasharray: 581;
+  stroke-dashoffset: 581;
+  animation: draw 2s ease forwards 4.2s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-light {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fff;
+  }
+}
+
+@keyframes mix-blend-mode-light {
+  from {
+    mix-blend-mode: normal;
+  }
+  to {
+    mix-blend-mode: overlay;
+  }
+}
+
+@keyframes fill-dark {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #1d1d1d;
+    opacity: 0.8;
+  }
+}
+
+@keyframes mix-blend-mode-dark {
+}
