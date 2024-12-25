@@ -18,7 +18,7 @@ const Contact = () => {
         </motion.p>
         <div className="flex flex-wrap justify-center items-center gap-4">
           <motion.button variants={fadeIn('right', 0.5)} initial="hidden" whileInView="show" viewport={{ once: true }} className="bg-primary mt-7 rounded-full py-3 px-5 border-2">
-            <Link href="#" target="_blank">
+            <Link href="https://wa.me/6289643979805" target="_blank">
               Hubungi Saya
             </Link>
           </motion.button>

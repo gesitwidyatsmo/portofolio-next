@@ -5,7 +5,7 @@ const ButtonHumberger = (props) => {
 
   useEffect(() => {
     setIsOpen(props.isOpen);
-  }, [props.isOpen]);
+    }, [props.isOpen]);
 
   return (
     <div>
